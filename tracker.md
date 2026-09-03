@@ -22,5 +22,22 @@ Tomorrow’s focus:
 
 THE DAY 1 ENDS HERE ---------------------------
 
+## Day 2 - 2026-09-03
+- [x] Learned if-else and for loops
+- [x] Solved 4–5 practice problems in day2_practice.py
+- [x] Pushed code to GitHub
 
- 
+Time spent: ~2 hours
+
+What I learned:
+- if, elif, else conditions
+- for loops with range
+- Using % operator for divisibility
+
+What felt hard:
+- nothing was hard today eveything felt easy
+
+Tomorrow’s focus:
+- while loops
+- pattern printing (stars/numbers)
+- mini-project: number guessing game
