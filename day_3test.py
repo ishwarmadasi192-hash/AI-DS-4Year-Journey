@@ -24,7 +24,9 @@ while attempt>0 and password != correct_password:
     print("Wrong password. Attempt left: ", attempt)
     password = input("Enter the password: ")
     attempt = attempt - 1
-while attempt<0 and password!=correct_password:
-    print("Too many wrong attrmpt. try again after 1hour")
+while attempt==0 and password!=correct_password:
+    print("Too many wrong attempt. try again after 1hour")
     password = input("Enter the password: ") 
-print("ACCESS GRANTED") 
+while attempt>=0 and password == correct_password:
+    print("ACCESS GRANTED") 
+    break

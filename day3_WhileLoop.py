@@ -19,7 +19,7 @@ while 0<=i<=n:
     i = i - 1 
 # problem 4 : passwoed checker
 password = input("Enter the password: ")
-correct_password = "TheNoob-09"
+correct_password = "Theidkwtf"
 while password != correct_password:
     print("Wrong password.Try Again")
     password = input("Enter the password: ")
