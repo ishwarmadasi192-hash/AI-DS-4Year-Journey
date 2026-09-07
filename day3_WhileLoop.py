@@ -20,10 +20,9 @@ while 0<=i<=n:
 # problem 4 : passwoed checker
 password = input("Enter the password: ")
 correct_password = "TheNoob-09"
-
 while password != correct_password:
     print("Wrong password.Try Again")
     password = input("Enter the password: ")
+print("ACCESS GRANTED.")
 
-print("Access granted")
-          
+
