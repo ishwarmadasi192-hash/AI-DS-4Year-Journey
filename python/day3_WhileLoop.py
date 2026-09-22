@@ -25,4 +25,12 @@ while password != correct_password:
     password = input("Enter the password: ")
 print("ACCESS GRANTED.")
 
+# by chat gpt
+i = 1
+while i<=5:
+    print(i)
+    i+=1
 
+#for loop
+for i in range(1,6):
+    print(i)

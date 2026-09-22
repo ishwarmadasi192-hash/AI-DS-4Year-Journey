@@ -42,3 +42,4 @@ average = total/5
 print(average)
 percentage = (total/500)*100
 print(percentage)
+

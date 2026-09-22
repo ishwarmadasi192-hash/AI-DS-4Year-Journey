@@ -37,3 +37,35 @@ for i in range(1, n + 1):
         print("Buzz")
     else:
         print(i)
+#by chatgpt
+        name=input("Enter your name: ")
+m1=int(input("Enter your Maths marks: "))
+m2=int(input("Enter your Physics marks: "))
+m3=int(input("Enter your Chemistry marks: "))
+print(name)
+total = m1+m2+m3
+print("Your total is: ",total)
+average = total/3
+print("aYour average marks are: ",average)
+percentage= total/3
+print("Your Percentage is: ",percentage,"%")
+if percentage>45:
+    print("You are passed.")
+else :
+    print("Failed!")
+if m1>40 and m2>40 and m3>40:
+    print("You are passed in all subject ")
+elif m1>40 and m2>40 and m3<40:
+    print("You are failed in 1 subject")
+elif m1>40 and m2<40 and m3>40:
+    print("You are failed in 1 subject")
+elif m1<40 and m2>40 and m3>40:
+    print("You are failed in 1 subject")
+elif m1>40 and m2<40 and m3<40:
+    print("You are failed in 2 subject")
+elif m1<40 and m2>40 and m3<40:
+    print("You are failed in 2 subject")
+elif m1<40 and m2<40 and m3>40:
+    print("You are failed in 2 subject")
+elif m1<40 and m2<40 and m3<40:
+    print("You are failed in 3 subject")
