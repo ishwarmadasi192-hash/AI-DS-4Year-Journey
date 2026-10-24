@@ -13,12 +13,12 @@ VALUES
 (104, 'Danny', 100, 'Texas', 22),
 (105, 'Lia', 65, 'New Jersey', 30);
 
-CREATE TABLE Customer (
+CREATE TABLE Customers (
 SalesmanId INT,
 CustomerId INT,
 CustomerName VARCHAR(255),
 PurchaseAmount INT,
-);INSERT INTO Customer (SalesmanId, CustomerId, CustomerName, PurchaseAmount)
+);INSERT INTO Customers (SalesmanId, CustomerId, CustomerName, PurchaseAmount)
 VALUES
 (101, 2345, 'Andrew', 550),
 (103, 1575, 'Lucky', 4500),
@@ -34,8 +34,9 @@ INSERT INTO Orders Values
 (5003,1234,105,'2022-02-15',1500)
 select * from Orders
 --1.enter a new record in order table
-alter table orders
-add orders 
+insert into orders
+(orderId,customerid,salesmanid,orderdate,amount)
+values
 (5003,1233,108,'2023-04-28',439)
 --2. Add Primary key constraint for SalesmanId column in Salesman table. Add default
 -- for City column in Salesman table. Add Foreign key constraint for SalesmanId
@@ -44,9 +45,13 @@ add orders
 
 --3. Fetch the data where the Customer’s name is ending with ‘N’ also get the purchase
 --amount value greater than 500.
+select * from Customers where CustomerName like ('%n')
+or PurchaseAmount>500;
 --4. Using SET operators, retrieve the first result with unique SalesmanId values from two
 --tables, and the other result containing SalesmanId with duplicates from two tables
+
 --5. Display the below columns which has the matching data.
 --Orderdate, Salesman Name, Customer Name, Commission, and City which has the
 --range of Purchase Amount between 500 to 1500.
+
 --6. Using right join fetch all the results from Salesman and Orders table.
